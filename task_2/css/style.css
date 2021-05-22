@@ -1,0 +1,2122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 900px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+hr {
+    border-top: 0.3px solid rgba(0, 0, 0, .1);
+}
+
+.header__top {
+    position: relative;
+    height: 89px;
+    width: 1170px;
+    background-color: #000000;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #ffffff;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 21px;
+}
+
+.logo {
+    width: 112px;
+    height: 30px;
+}
+
+.nav__menu {
+    display: flex;
+}
+
+.nav__menu__item {
+    color: #ffffff;
+    margin-right: 44px;
+}
+
+#nav__menu__mobile {
+    display: none;
+}
+
+.close {
+    display: none;
+    position: absolute;
+    right: 34px;
+    top: 25px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 38px;
+    width: 3px;
+    background-color: #ffffff;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.nav__menu__mobile__item {
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    align-self: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 90deg, #E6394F 0%, #E65539 100%);
+    z-index: 4444;
+    overflow: hidden;
+}
+
+.nav__menu__item__link {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.nav__menu__item:last-child {
+    margin-right: 0px;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+}
+
+.search__container {
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #292929;
+    margin-right: 37px;
+    align-items: center;
+    justify-content: center;
+}
+
+.language {
+    color: #E6394F;
+}
+
+.header__content {
+    height: 700px;
+    margin: auto;
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.header__content__title {
+    margin-top: 115px;
+    font-size: 48px;
+    letter-spacing: 3.03px;
+    line-height: 51px;
+    text-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header__content__paragraph {
+    margin-top: 30px;
+    margin-bottom: 76px;
+    font-size: 18px;
+    letter-spacing: 1.03px;
+    line-height: 30px;
+    text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header__content__btn {
+    height: 48px;
+    width: 200px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #E6394F 0%, #E65539 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 40px
+}
+
+
+/*Benefits section*/
+
+.main__benefits__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.benefits__mobile {
+    display: none;
+}
+
+.main__benefits {
+    height: 900px;
+    background-color: #000000;
+}
+
+.main__benefits__title {
+    padding-top: 60px;
+    color: #FFFFFF;
+    font-size: 38px;
+    letter-spacing: 1.69px;
+    line-height: 51px;
+    text-align: center;
+}
+
+.arrow {
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.next {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.prev {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-right: 85px;
+}
+
+.main__benefits__arrows {
+    padding-top: 50px;
+    padding-bottom: 28px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*carousel*/
+
+.carousel-nav-icon {
+    height: 16px;
+    width: 11px;
+}
+
+.col-slider {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 8px;
+    height: 558px;
+    color: #FFFFFF;
+    background-size: cover;
+    background-position: center center;
+    width: 317px;
+    opacity: 0.74;
+}
+
+.first__slide {
+    margin-top: 40px;
+}
+
+.third__slide {
+    margin-top: 70px;
+}
+
+.slider__title {
+    font-size: 30px;
+    letter-spacing: 1.71px;
+    line-height: 41px;
+}
+
+.slider__paragraph {
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 1.03px;
+    line-height: 24px;
+}
+
+
+/*Lviv hub*/
+
+.lviv__hub {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.lviv__hub__content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 65px 0px;
+}
+
+.lviv__hub__content__title {
+    width: 536px;
+    color: #202020;
+    font-size: 38px;
+    letter-spacing: 2.39px;
+    line-height: 51px;
+}
+
+.lviv__hub__content__paragraph {
+    padding-top: 26px;
+    padding-bottom: 36px;
+    width: 536px;
+    color: #202020;
+    font-size: 18px;
+    letter-spacing: 1.03px;
+    line-height: 30px;
+}
+
+.lviv__hub__content__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 48px;
+    width: 200px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #E6394F 0%, #E65539 100%);
+}
+
+.lviv__hub__img {
+    width: 50%;
+}
+
+.lviv__hub__img__item {
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+
+/*Platform features*/
+
+.platform__features {
+    padding-top: 66px;
+    height: 474px;
+    background-color: #000000;
+    padding-bottom: 120px;
+}
+
+.platform__features__title {
+    color: #FFFFFF;
+    font-size: 38px;
+    letter-spacing: 2.39px;
+    line-height: 51px;
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.platform__features__wrapper {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.platform__features_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.platform__features__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 200px;
+}
+
+.platform__features__paragraph {
+    padding-top: 40px;
+    color: #FFFFFF;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+/*search__for__service*/
+
+.search__for__service {
+    background-color: #ffffff;
+    padding: 67px 0px;
+}
+
+.search__for__service__wrapper {
+    height: 688px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.search__for__service__title {
+    text-align: start;
+    color: #202020;
+    font-size: 38px;
+    letter-spacing: 2.39px;
+    line-height: 51px;
+}
+
+.search__for__service__btn {
+    height: 48px;
+    width: 200px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #E6394F 0%, #E65539 100%);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 19px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__for__service__tab__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__for__service__tab {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search__for__service__tab__item {
+    display: flex;
+    padding-left: 15px;
+    color: #727272;
+    border-left: 3px solid #E1E1E1;
+    height: 100px;
+    border: 0px;
+    background-color: white;
+    outline: 0;
+}
+
+.services__position {
+    align-items: center;
+}
+
+.industries__position {
+    align-items: flex-end;
+}
+
+.search__for__service__tab__item {
+    border-left: 3px solid #E1E1E1;
+}
+
+.search__for__service__tab__item:hover {
+    color: #000000;
+    border-left: 3px solid #E6394F;
+    transition: 300ms;
+}
+
+.search__for__service__tab__item:focus {
+    outline: 0;
+}
+
+.search__for__service__tab__item>h3 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.03px;
+    line-height: 27px;
+}
+
+.search__for__service__list {
+    display: flex;
+}
+
+.search__for__service__list__item {
+    display: flex;
+    /* flex-direction: column; */
+    align-self: flex-start;
+    /* width: 200px; */
+    margin-right: 50px;
+    display: none;
+}
+
+
+/* .search__for__service__list__item:last-child {
+    margin-right: 0px;
+} */
+
+.search__for__service__list__small_item {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 200px;
+    margin-right: 50px;
+}
+
+.search__for__service__technologies__title {
+    margin-bottom: 36px;
+    color: #959595;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 21px;
+}
+
+.search__for__service__technologies {
+    color: #727272;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 21px;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #979797;
+}
+
+.search__for__service__technologies::after {
+    margin-left: 10px;
+    content: '';
+    border: solid #202020;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.search__for__service__tab__item:hover~.search__for__service__list {}
+
+
+/*latest news*/
+
+.news__slider__mobile {
+    display: none;
+}
+
+.latest__news {
+    background-color: #000000;
+    padding-top: 55px;
+    padding-bottom: 70px;
+}
+
+.latest__news__wrapper {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.latest__news__title {
+    color: #FFFFFF;
+    font-size: 38px;
+    letter-spacing: 2.39px;
+    line-height: 51px;
+}
+
+.carousel__inner__content {
+    opacity: 0.75;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #ffff;
+    height: 150px;
+    justify-content: space-between;
+    padding: 10px;
+    background: #1c2121;
+}
+
+.carousel__inner__content__title {
+    width: 322px;
+    height: 76px;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 1.37px;
+}
+
+.carousel__inner__content__date {
+    width: 80px;
+    height: 19px;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+}
+
+.latest__news__btn {
+    color: #ffffff;
+    text-decoration: none;
+    height: 48px;
+    width: 200px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #E6394F 0%, #E65539 100%);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 19px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-new {
+    margin: 20px;
+    height: 547px;
+    background-size: cover;
+    background-position: center center;
+    width: 338px;
+    opacity: 0.74;
+}
+
+.prev-new {
+    margin-right: 35px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.next-new {
+    margin-left: 35px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+
+/*Footer*/
+
+.footer__main {
+    background-color: #353335;
+    height: 730px;
+}
+
+.footer__contact__icons {
+    margin-right: 10px;
+}
+
+.footer__contact__icons__container {
+    display: flex;
+}
+
+.footer__contact__icon__link {
+    color: #ffffff;
+}
+
+.container__logo {
+    margin-bottom: 30px;
+}
+
+.footer__main__wrapper {
+    height: 700px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__main__first__section {
+    display: flex;
+}
+
+.footer__main__container {
+    width: 300px;
+}
+
+.footer__main__first__section__left__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__titles {
+    padding-top: 25px;
+    color: #E63D4C;
+    font-size: 18px;
+    letter-spacing: 1.03px;
+    line-height: 29px;
+    padding-bottom: 20px;
+}
+
+.footer__main__column>a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    letter-spacing: 1.03px;
+    line-height: 32px;
+}
+
+.footer__news__title {
+    width: 245px;
+    color: #FFFFFF;
+    font-size: 38px;
+    letter-spacing: 2.39px;
+    line-height: 51px;
+    text-align: start;
+}
+
+.footer__main__first__section__right__input {
+    outline: none;
+    border: 0px;
+    padding: 9px;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 30px 100px 100px 30px;
+    background-color: rgb(97, 96, 93);
+}
+
+.footer__main__first__section__right__input::placeholder {
+    color: #ffffff;
+}
+
+.footer__main__first__input__container {
+    position: relative;
+    width: 300px;
+}
+
+.footer__main__first__section__right__oval {
+    display: flex;
+    border: 50%;
+    top: 0;
+    border-radius: 50%;
+    right: 0;
+    position: absolute;
+    height: 42px;
+    width: 40px;
+    background: linear-gradient(to right, #e6394f 16%, #e65539 80%);
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__main__second__section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__main__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__more {
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+a:hover>.footer__more {
+    border: solid #E6394F;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.footer__social {
+    padding-bottom: 20px;
+}
+
+.footer__social:last-child {
+    padding-bottom: 0px;
+}
+
+.footer__main__first__section__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__line {
+    margin-bottom: 0px;
+    margin-top: 2rem;
+    height: 0.3px;
+    background-color: #FFFFFF;
+}
+
+.footer__bottom {
+    height: 145px;
+    background-color: #4C4B4C;
+}
+
+.footer__bottom__wrapper {
+    padding: 20px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__bottom__left {
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__bottom__paragraph {
+    font-size: 10px;
+    line-height: 1.6;
+    letter-spacing: 0.57px;
+    color: #ffffff;
+}
+
+.footer__bottom__cluster {
+    color: #929294;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 29px;
+}
+
+.it__cluster__img {
+    height: 54px;
+    width: 54px;
+    margin-right: 30px;
+}
+
+.footer__bottom__logos {
+    display: flex;
+    align-items: center;
+}
+
+
+/**/
+
+.burger {
+    display: none;
+    align-items: center;
+}
+
+.toggler {
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hamburger {
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger>div {
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #ffffff;
+    transition: .4s;
+}
+
+.hamburger>div:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #ffffff;
+    top: -10px;
+    left: 0;
+    transition: .4s;
+}
+
+.hamburger>div:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #ffffff;
+    top: 10px;
+    left: 0;
+    transition: .4s;
+}
+
+
+/* .toggler:checked+.hamburger>div {
+    transform: rotate(135deg);
+}
+
+.toggler:checked:hover+.hamburger>div {
+    transform: rotate(225deg);
+}
+
+.toggler:checked+.hamburger>div:before,
+.toggler:checked+.hamburger>div:after {
+    top: 0;
+    transform: rotate(90deg);
+} */
+
+
+/* .search__for__service__tab:hover:first-child+.search__for__service__list {
+    display: none;
+} */
+
+
+/*Media */
+
+@media only screen and (max-width: 900px) {
+    .burger {
+        display: flex;
+        align-items: center;
+    }
+    header {
+        height: 100vh;
+    }
+    .header__top {
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .header__content {
+        width: auto;
+    }
+    .header__content {
+        height: 90vh;
+        padding: 10px;
+    }
+    .container__logo {
+        margin-bottom: 0px;
+    }
+    div>.why__lviv__main__title {
+        font-size: 28px;
+    }
+    .header__content__paragraph {
+        margin-bottom: 35px;
+    }
+    .nav__menu {
+        display: none;
+    }
+    .close {
+        z-index: 5000;
+        display: block;
+    }
+    .search__container {
+        margin-right: 5px;
+    }
+    .header__search {
+        margin-right: 70px;
+        display: none;
+        align-items: center;
+    }
+    .lviv__hub__img {
+        display: none;
+    }
+    .lviv__hub {
+        justify-content: center;
+    }
+    .lviv__hub__content {
+        width: 80%;
+        padding: 25px 0px;
+    }
+    .lviv__hub__content__title {
+        text-align: center;
+        color: #202020;
+        font-size: 24px;
+        letter-spacing: 1.69px;
+        line-height: 30px;
+    }
+    .lviv__hub__content__paragraph {
+        font-size: 18px;
+        letter-spacing: 1.03px;
+        line-height: 1.1;
+    }
+    .lviv__hub__content__title,
+    .lviv__hub__content__paragraph {
+        width: auto;
+    }
+    .platform__features {
+        height: 100%;
+        padding: 30px 0px;
+    }
+    .illustrarion {
+        display: none;
+    }
+    .platform__features__wrapper {
+        width: 360px;
+    }
+    .platform__features_cards {
+        flex-direction: column;
+        display: flex;
+    }
+    /*news slider*/
+    .latest__news__wrapper {
+        width: 303px;
+        height: 600px;
+    }
+    .latest__news__title {
+        text-align: center;
+    }
+    .news__slider {
+        display: none;
+    }
+    .news__slider__mobile {
+        display: block;
+    }
+    .col-new {
+        margin: 0px;
+        height: 422px;
+        width: 275px;
+    }
+    .search__for__service__tab {
+        padding: 20px 0px;
+    }
+    /*benefits desktop*/
+    .main__benefits {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .main__benefits__wrapper {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        width: 320px;
+    }
+    .main__benefits__title,
+    .platform__features__title,
+    .search__for__service__title,
+    .latest__news__title,
+    .main__left__section__title,
+    .header__needed__right__section__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .search__for__service,
+    .latest__news {
+        padding: 30px 0px;
+    }
+    .slider__title {
+        font-size: 20px;
+        line-height: 21px;
+    }
+    .benefits__desktop {
+        display: none;
+    }
+    .benefits__mobile {
+        display: block;
+    }
+    /*search for service*/
+    .search__for__service__wrapper {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+    }
+    .search__for__service__list__item {
+        display: flex;
+        flex-direction: column;
+    }
+    .search__for__service__tab__container {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+    }
+    .search__for__service__list {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .search__for__service__btn {
+        align-self: center;
+        margin-top: 20px;
+    }
+    /*footer*/
+    .footer__main {
+        height: auto;
+    }
+    .container__logo {
+        display: flex;
+        justify-content: center;
+    }
+    .footer__main__wrapper {
+        height: auto;
+        width: 320px;
+        flex-direction: column;
+    }
+    .footer__main__container {
+        width: auto;
+    }
+    .footer__main__first__section {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__main__first__section__left__row {
+        text-align: center;
+        flex-direction: column;
+    }
+    .footer__bottom {
+        height: auto;
+    }
+    .footer__main__first__input__container {
+        margin: 0 auto;
+    }
+    .footer__news__title {
+        width: auto;
+        font-size: 22px;
+        text-align: center;
+    }
+    .footer__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer__social:last-child {
+        padding-bottom: 20px;
+    }
+    .footer__bottom__logos {
+        margin-top: 10px;
+    }
+    .footer__main__second__section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer__bottom__wrapper {
+        align-items: center;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__bottom__left {
+        width: 320px;
+        text-align: center;
+    }
+}
+
+
+/*why lviv */
+
+.why__lviv__main__title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.06;
+    letter-spacing: 3.03px;
+    color: #ffffff;
+}
+
+.shape {
+    width: 86px;
+    height: 80px;
+}
+
+
+/* section discover the land */
+
+.discover__the__land__main {
+    width: 100%;
+    height: 1300px;
+    background-color: #000000;
+}
+
+.discover__the__land__main__wrapper {
+    width: 1170px;
+    height: 514px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__left__section {
+    width: 454px;
+}
+
+.main__left__section__title {
+    font-size: 30px;
+    line-height: 1.17;
+    letter-spacing: 1.89px;
+    color: #202020;
+    margin-bottom: 50px;
+}
+
+.main__right__section {
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main__right__columns {
+    width: 115px;
+}
+
+.column__position {
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.34px;
+    background-image: linear-gradient(to right, #ff0051 -10%, #ff411f 182%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.column__paragraph {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.8px;
+}
+
+.header__needed__wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 30px;
+}
+
+.tech__prof {
+    margin: 0 0 0 26px;
+    width: 465px;
+    height: 200px;
+}
+
+.tech__prof__line {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 12px 0;
+}
+
+.tech__prof__line__aqua {
+    width: 65px;
+    height: 4px;
+    background: #4af6cd;
+}
+
+.tech__prof__line__gradient {
+    width: 400px;
+    height: 4px;
+    background-image: linear-gradient(to right, #ff0051 -10%, #ff411f 182%);
+}
+
+.header__needed__left__section__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header__needed__icons__number {
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.header__needed__icons__paragraph {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
+}
+
+.specialists__from__lviv {
+    margin: 50px 0 0 26px;
+    width: 465px;
+    height: 200px;
+}
+
+.specialists__from__lviv__line {
+    width: 115px;
+    height: 4px;
+    background: #4af6cd;
+}
+
+.specialists__from__lviv__gradient {
+    width: 350px;
+    height: 4px;
+    background-image: linear-gradient(to right, #ff0051 -10%, #ff411f 182%);
+}
+
+.average__annual__forecast {
+    margin: 50px 0 0 26px;
+    width: 465px;
+    height: 200px;
+}
+
+.average__annual__forecast__line {
+    width: 215px;
+    height: 4px;
+    background: #4af6cd;
+}
+
+.average__annual__forecast__gradient {
+    width: 250px;
+    height: 4px;
+    background-image: linear-gradient(to right, #ff0051 -10%, #ff411f 182%);
+}
+
+.header__needed__left__section {
+    width: 550px;
+}
+
+.header__needed__right__section {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header__needed__right__section__title {
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: 1.89px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.header__needed__right__section__content {
+    width: 467px;
+    height: 487px;
+}
+
+.header__needed__right__section__paragraph {
+    margin: 50px 0 0 0;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.03px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.lviv__it__cluster {
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.lviv__it__cluster__left__section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lviv__it__cluster__title {
+    width: 487px;
+    height: 153px;
+    font-size: 38px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.34;
+    letter-spacing: 2.39px;
+    color: #202020;
+}
+
+.lviv__it__cluster__paragraph {
+    width: 493px;
+    height: 356px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.03px;
+    color: #000000;
+}
+
+.lviv__it__cluster__img__container {
+    width: 50%;
+}
+
+.lviv__it__cluster__img {
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+.key__tech__industry {
+    width: 100%;
+    height: 900px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.key__tech__industry__wrapper {
+    padding-top: 60px;
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.key__tech__industry__left__section {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.key__tech__industry__title {
+    width: 420px;
+    height: 102px;
+    font-size: 38px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.34;
+    letter-spacing: 2.39px;
+    color: #000000;
+}
+
+.key__tech__industry__right__section {
+    margin-top: 149px;
+    width: 400px;
+    align-items: flex-start;
+}
+
+.key__tech__industry__right__section__title {
+    width: 143px;
+    height: 41px;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.71px;
+    color: #000000;
+}
+
+.key__tech__industry__right__section__paragraph {
+    width: 400px;
+    margin: 30px 0px;
+    height: 195px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.03px;
+    color: #000000;
+}
+
+.key__tech__industry__attendees__content {
+    border-top: 4px solid #ff0051;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.key__tech__industry__attendees__number {
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.key__tech__industry__attendees {
+    font-size: 18px;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.key__tech__industry__right__section__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    width: 200px;
+    height: 48px;
+    border-radius: 3px;
+    background-image: linear-gradient(to right, #e6394f 16%, #e65539 80%);
+}
+
+.key__tech__slider {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 600px;
+}
+
+.key__tech__slider__img {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+}
+
+.key__industry__arrow__section {
+    display: flex;
+}
+
+.key__industry__arrow {
+    cursor: pointer;
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    padding: 2px;
+}
+
+.arrow__left {
+    transform: rotate( 135deg);
+    -webkit-transform: rotate( 135deg);
+}
+
+.arrow__right {
+    margin-left: 86px;
+    transform: rotate( -45deg);
+    -webkit-transform: rotate( -45deg);
+}
+
+.arena {
+    z-index: 200;
+    left: 298px;
+    width: 287px;
+    height: 542px;
+    padding: 39px 51px 44px 38px;
+}
+
+.park {
+    z-index: 50;
+    width: 236px;
+    height: 433px;
+    padding: 33px 59px 344px 25px;
+}
+
+.sth {
+    z-index: 100;
+    left: 140px;
+    padding: 36px 101px 358px 43px;
+    width: 258px;
+    height: 487px;
+}
+
+
+/*lviv tech research wrapper*/
+
+.lviv__tech__research {
+    width: 100%;
+    height: 700px;
+    background-color: #000000;
+}
+
+.lviv__tech__research__wrapper {
+    padding-top: 60px;
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lviv__tech__research__left__section {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    width: 580px;
+}
+
+.lviv__tech__research__title {
+    font-size: 38px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.34;
+    letter-spacing: 2.39px;
+    margin-bottom: 80px;
+}
+
+.lviv__tech__research__price {
+    color: #ff411f;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.8;
+    letter-spacing: 1.34px;
+}
+
+.lviv__tech__research__effect {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.8px;
+}
+
+.lviv__tech__research__paragraph {
+    font-size: 18px;
+    width: 580px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.8px;
+    margin-bottom: 90px;
+}
+
+.lviv__tech__research__btn {
+    color: #ffffff;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 15px 23px 14px 24px;
+    border-radius: 3px;
+    background: linear-gradient(to right, #e6394f 16%, #e65539 80%);
+}
+
+.lviv__tech__research__right__section {
+    margin-top: 140px;
+    width: 470px;
+}
+
+.lviv__tech__research__right__arrows {
+    margin-top: 155px;
+    display: flex;
+    justify-content: center;
+}
+
+.lviv__tech__research__right__images {
+    display: flex;
+    justify-content: space-between;
+    height: 265px;
+}
+
+.right__images__first,
+.right__images__third {
+    align-self: center;
+}
+
+.right__images__third>img {
+    height: 48.4px;
+    width: 51.87px;
+}
+
+.right__images__second>img {
+    height: 52.12px;
+    width: 48.03px;
+}
+
+.right__images__second {
+    align-self: flex-start;
+}
+
+.right__img__color:active {
+    filter: invert(106%) sepia(88%) saturate(1367%) hue-rotate(83deg) brightness(102%) contrast(93%);
+}
+
+.oval__slider {
+    border: 2.4px solid #FF3A25;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.oval__slider:hover {
+    border: 2.4px solid #4af6cd;
+}
+
+.right__images__first>img {
+    height: 78px;
+    width: 76px;
+}
+
+.lviv__tech__arrow {
+    display: flex;
+    cursor: pointer;
+    border: solid #ff302c;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    padding: 2px;
+}
+
+.arrow__left__tech {
+    transform: rotate( 135deg);
+    -webkit-transform: rotate( 135deg);
+}
+
+.arrow__right__tech {
+    margin-left: 82px;
+    transform: rotate( -45deg);
+    -webkit-transform: rotate( -45deg);
+}
+
+
+/*contact us*/
+
+.contact__us {
+    padding: 65px 0px;
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(to right, #e6394f 16%, #e65539 80%);
+}
+
+.contact__us__wrapper {
+    width: 1109px;
+    height: 559px;
+    padding: 53px 227px 66px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.contact__us__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__us__title {
+    font-size: 38px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.34;
+    letter-spacing: 2.38px;
+    color: #202020;
+}
+
+.contact__us__paragraph {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.03px;
+    color: #202020;
+    margin-bottom: 60px;
+}
+
+.contact__us__container {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin-bottom: 25px;
+}
+
+.contact__field {
+    padding-left: 15px;
+    width: 300px;
+    height: 34px;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    outline: none;
+    border: none;
+    padding-bottom: 2px;
+}
+
+.contact__field::placeholder {
+    font-size: 14px;
+    color: #202020;
+    padding-bottom: 2px;
+}
+
+.contact__us__textarea {
+    width: 620px;
+    height: 68px;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    margin-bottom: 65px;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.contact__us__textarea::placeholder {
+    font-size: 14px;
+    color: #202020;
+}
+
+.contact__us__btn {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 200px;
+    height: 48px;
+    border-radius: 3px;
+    color: #ffffff;
+    background: linear-gradient(to right, #e6394f 16%, #e65539 80%);
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+
+/*mobile lviv*/
+
+@media only screen and (max-width: 1024px) {
+    .discover__the__land__main {
+        height: auto;
+    }
+    .discover__the__land__main__wrapper {
+        width: 500px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header__needed__wrapper {
+        width: 500px;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 30px;
+    }
+    .header__needed__right__section__title {
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .header__needed__right__section__paragraph {
+        text-align: center;
+    }
+    .header__needed__right__section {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .carousel__inner__content__title,
+    .carousel__inner__content__date {
+        width: auto;
+        padding: 0px 20px;
+    }
+    .first__slide {
+        margin-top: 0px;
+    }
+    .third__slide {
+        margin-top: 0px;
+    }
+    /*lviv__it__cluster*/
+    .lviv__it__cluster {
+        align-items: center;
+        background-color: #ffffff;
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .lviv__it__cluster__paragraph {
+        width: 320px;
+        height: auto;
+    }
+    .lviv__it__cluster__title {
+        width: 300px;
+        height: auto;
+        line-height: 30px;
+        text-align: center;
+        font-size: 24px;
+    }
+    .lviv__it__cluster__img__container {
+        width: 320px;
+    }
+    /*key tech industry*/
+    .key__tech__industry {
+        height: auto;
+    }
+    .key__tech__industry__wrapper {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .key__tech__industry__right__section {
+        width: 500px;
+        margin-bottom: 100px;
+    }
+    .key__tech__industry__wrapper {
+        width: 320px;
+    }
+    .key__tech__industry__right__section {
+        width: 320px;
+    }
+    .key__tech__industry__right__section__paragraph {
+        width: 320px;
+        height: auto;
+    }
+    /*lviv tech research*/
+    .lviv__tech__research {
+        width: 100%;
+        height: auto;
+    }
+    .lviv__tech__research__wrapper {
+        width: 500px;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+    .lviv__tech__research__left__section {
+        width: 320px;
+    }
+    .lviv__tech__research__paragraph {
+        width: 320px;
+    }
+    .key__tech__industry__right__section__title {
+        font-size: 22px;
+    }
+    .lviv__tech__research__right__section {
+        width: 320px;
+    }
+    .lviv__tech__research__right__arrows {
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+    /*contact us*/
+    .contact__us__wrapper {
+        width: 500px;
+        padding: 0px;
+    }
+    div+.contact__us {
+        background: #ffffff;
+    }
+    .contact__us__container {
+        width: 500px;
+    }
+    .contact__us__textarea {
+        width: 500px;
+    }
+    .contact__field {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .main__left__section {
+        width: auto;
+    }
+    .main__right__section {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .discover__the__land__main__wrapper {
+        color: #ffffff;
+        background-color: #000000;
+    }
+    .discover__the__land__main__wrapper {
+        padding: 30px;
+        width: 100%;
+    }
+    .header__needed__wrapper {
+        width: 320px;
+    }
+    .main__left__section>h2 {
+        color: #ffffff;
+    }
+    .header__needed__right__section {
+        width: 320px;
+    }
+    .header__needed__left__section {
+        width: 320px;
+    }
+    .tech__prof,
+    .specialists__from__lviv,
+    .average__annual__forecast {
+        width: 320px;
+    }
+    .tech__prof__line__aqua {
+        width: 35px;
+    }
+    .tech__prof__line__gradient {
+        width: 180px;
+    }
+    .specialists__from__lviv__gradient {
+        width: 150px;
+    }
+    .specialists__from__lviv__line {
+        width: 65px;
+    }
+    .average__annual__forecast__gradient {
+        width: 140px;
+    }
+    .average__annual__forecast__line {
+        width: 75px;
+    }
+    .header__needed__right__section__content {
+        width: 320px;
+        height: auto;
+    }
+    /*key industry*/
+    .key__tech__industry__title {
+        width: 320px;
+        height: auto;
+        text-align: center;
+        font-size: 24px;
+    }
+    .contact__us {
+        padding: 30px 0px;
+        height: auto;
+    }
+    .contact__us__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .key__tech__industry__left__section {
+        width: 320px;
+    }
+    .key__tech__slider {
+        height: 350px;
+    }
+    .lviv__tech__research__title {
+        margin-bottom: 40px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .lviv__tech__research__price {
+        font-size: 20px;
+    }
+    .lviv__tech__research__wrapper {
+        padding-top: 30px;
+    }
+    .contact__us__items {
+        height: 550px;
+    }
+    /*key tech*/
+    .arena {
+        left: 190px;
+        width: 143px;
+        height: 270px;
+        padding: 0px;
+    }
+    .sth {
+        left: 90px;
+        padding: 0px;
+        width: 129px;
+        height: 243px;
+    }
+    .park {
+        width: 118px;
+        height: 215px;
+        padding: 0px;
+    }
+    /*lviv__tech__research*/
+    .lviv__tech__research__wrapper {
+        width: 320px;
+    }
+    /*contact us*/
+    .contact__us__wrapper {
+        width: 320px;
+        padding: 0px;
+    }
+    .contact__us__container {
+        width: 320px;
+    }
+    .contact__us__textarea {
+        width: 320px;
+    }
+    .contact__field {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /*key tech*/
+    .arena {
+        left: 130px;
+        width: 110px;
+        height: 210px;
+        padding: 0px;
+    }
+    .sth {
+        left: 65px;
+        padding: 0px;
+        width: 90px;
+        height: 200px;
+    }
+    .park {
+        width: 70px;
+        height: 170px;
+        padding: 0px;
+    }
+    .tech__prof,
+    .specialists__from__lviv,
+    .average__annual__forecast {
+        width: 280px;
+    }
+}

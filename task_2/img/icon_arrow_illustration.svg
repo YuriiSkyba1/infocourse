@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="118px" viewBox="0 0 250 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 12 Copy</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.289399 0 0 0 0 0.964817 0 0 0 0 0.803534 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter x="-45.0%" y="-375.0%" width="190.0%" height="850.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.28939947   0 0 0 0 0.964817177   0 0 0 0 0.803533669  0 0 0 0.8377774 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Main.Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Landing-Final" transform="translate(-778.000000, -2857.000000)">
+            <g id="Group-12-Copy" transform="translate(-46.000000, -632.000000)" filter="url(#filter-1)">
+                <g filter="url(#filter-2)" transform="translate(874.000000, 3539.000000)">
+                    <path d="M1,8 L149,8 C149.552285,8 150,8.44771525 150,9 C150,9.55228475 149.552285,10 149,10 L1,10 C0.44771525,10 6.76353751e-17,9.55228475 0,9 C-6.76353751e-17,8.44771525 0.44771525,8 1,8 Z" id="vvvvv" fill="#FFFFFF"></path>
+                    <g id="next-copy-2" transform="translate(138.000000, 0.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M11.7468219,8.50605461 L1.4697165,0.203550138 C1.13299913,-0.0683121383 0.587845939,-0.0678551087 0.251692731,0.204956383 C-0.0842000958,0.477732719 -0.0833321557,0.919609992 0.253428611,1.19168321 L9.91880978,9.00003326 L0.253081435,16.8083482 C-0.0836359347,17.0804565 -0.0845038749,17.5220525 0.251345554,17.794864 C0.419856129,17.9316213 0.640616698,18 0.861377268,18 C1.08157368,18 1.30146631,17.9320784 1.4696731,17.7962703 L11.7468219,9.49397674 C11.9089965,9.36326629 12,9.18537632 12,9.00003326 C12,8.81469019 11.9087361,8.63701116 11.7468219,8.50605461 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
